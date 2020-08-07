@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfie</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Selfie Cam</h1>
+    </div>
+    <div class="top-container">
+        <video id="video">Stream not available</video>
+        <button id="photo-button" class="btn">
+            Take a selfie <i class="fas fa-camera"></i>
+        </button>
+        <select id="photo-filter" class="select">
+            <option value="none">No filter</option>
+            <option value="grayscale(100%)">Grayscale</option>
+            <option value="sepia(100%)">Sepia</option>
+            <option value="invert(100%)">Invert</option>
+            <option value="hue-rotate(90deg)">Hue</option>
+            <option value="blur(10px)">Blur</option>
+            <option value="contrast(200%)">Contrast</option>
+        </select>
+        <button id="clear-button" class="btn">Clear</button>
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="bottom-container">
+        <div id="photos"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

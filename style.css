@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Monoton&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff url(background.jpg);
+    overflow-x: hidden;
+}
+
+.navbar {
+    color: #fff;
+    padding: 10px;
+    height: 100px;
+}
+
+.navbar h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    color: red;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+.top-container {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.bottom-container {
+    max-width: 960px;
+    margin: auto;
+    padding: 10px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-family: 'Chewy', cursive;
+    background: black;
+    color: white;
+}
+
+.select {
+    height: 40px;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 10px;
+    font-family: 'Chewy', cursive;
+    background: black;
+    color: white;
+}
+
+#canvas {
+    display: none;
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#photos img {
+    width: 100%;
+}
